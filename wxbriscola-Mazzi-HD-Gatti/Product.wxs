@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="wxbriscola_Mazzi_HD_Gatti" Language="1033" Version="1.0.0.0" Manufacturer="numeronesoft" UpgradeCode="e75784e4-b88d-4bba-9cba-abb313ca4dd4">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="wxbriscola_Mazzi_HD_Gatti" Level="1">
+			<ComponentRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Gatti" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFiles64Folder">
+				<Directory Id="INSTALLFOLDER" Name="wxBriscola">
+					<Directory Id="Mazzi" Name="Mazzi">
+						<Directory Id="Gatti" Name="Gatti">
+							<Component Id="ProductComponents" Guid="943A61A8-603F-40AB-9801-7D72074837F7" Win64='yes'>
+								<File Id="a" Name="0.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\0.png" />
+								<File Id="b" Name="1.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\1.png" />
+								<File Id="c" Name="2.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\2.png" />
+								<File Id="d" Name="3.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\3.png" />
+								<File Id="e" Name="4.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\4.png" />
+								<File Id="f" Name="5.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\5.png" />
+								<File Id="g" Name="6.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\6.png" />
+								<File Id="hh" Name="7.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\7.png" />
+								<File Id="i" Name="8.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\8.png" />
+								<File Id="j" Name="9.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\9.png" />
+								<File Id="h" Name="10.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\10.png" />
+								<File Id="k" Name="11.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\11.png" />
+								<File Id="l" Name="12.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\12.png" />
+								<File Id="m" Name="13.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\13.png" />
+								<File Id="n" Name="14.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\14.png" />
+								<File Id="o" Name="15.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\15.png" />
+								<File Id="p" Name="16.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\16.png" />
+								<File Id="q" Name="17.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\17.png" />
+								<File Id="r" Name="18.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\18.png" />
+								<File Id="s" Name="19.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\19.png" />
+								<File Id="t" Name="20.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\20.png" />
+								<File Id="u" Name="21.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\21.png" />
+								<File Id="v" Name="22.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\22.png" />
+								<File Id="w" Name="23.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\23.png" />
+								<File Id="x" Name="24.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\24.png" />
+								<File Id="y" Name="25.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\25.png" />
+								<File Id="z" Name="26.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\26.png" />
+								<File Id="aa" Name="27.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\27.png" />
+								<File Id="ab" Name="28.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\28.png" />
+								<File Id="ac" Name="29.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\29.png" />
+								<File Id="ad" Name="30.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\30.png" />
+								<File Id="ae" Name="31.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\31.png" />
+								<File Id="af" Name="32.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\32.png" />
+								<File Id="ag" Name="33.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\33.png" />
+								<File Id="ah" Name="34.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\34.png" />
+								<File Id="ai" Name="35.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\35.png" />
+								<File Id="aj" Name="36.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\36.png" />
+								<File Id="ak" Name="37.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\37.png" />
+								<File Id="al" Name="38.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\38.png" />
+								<File Id="am" Name="39.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\39.png" />
+								<File Id="an" Name="retro carte pc.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\retro carte pc.png" />
+								<File Id="ao" Name="retro carte mazzo.png" Source="c:\Users\numer\source\repos\wxBriscola\wxbriscola-Mazzi-HD-Gatti\Gatti\retro carte mazzo.png" />
+							</Component>
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</Fragment>
+
+</Wix>
