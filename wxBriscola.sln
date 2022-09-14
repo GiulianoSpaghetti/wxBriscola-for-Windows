@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wxBriscola", "wxBriscola\wx
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SetupProject1", "SetupProject1\SetupProject1.wixproj", "{FDA74F75-C53F-4B85-BE22-D5C944810CA9}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Dr Francy", "Dr Francy\Dr Francy.wixproj", "{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		All|x64 = All|x64
@@ -41,6 +43,18 @@ Global
 		{FDA74F75-C53F-4B85-BE22-D5C944810CA9}.Release|x64.Build.0 = Release|x86
 		{FDA74F75-C53F-4B85-BE22-D5C944810CA9}.Release|x86.ActiveCfg = Release|x86
 		{FDA74F75-C53F-4B85-BE22-D5C944810CA9}.Release|x86.Build.0 = Release|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.All|x64.ActiveCfg = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.All|x64.Build.0 = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.All|x86.ActiveCfg = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.All|x86.Build.0 = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Debug|x64.ActiveCfg = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Debug|x64.Build.0 = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Debug|x86.ActiveCfg = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Debug|x86.Build.0 = Debug|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Release|x64.ActiveCfg = Release|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Release|x64.Build.0 = Release|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Release|x86.ActiveCfg = Release|x86
+		{41A61C2F-3A36-4165-8AE8-F6FB3F75EB6A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
