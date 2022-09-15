@@ -127,7 +127,8 @@
 			<Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
 			<Property Id="WixUI_Mode" Value="InstallDir" />
 			<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
-
+			<Property Id="ARPNOMODIFY" Value="1" />
+			
 			<DialogRef Id="BrowseDlg" />
 			<DialogRef Id="DiskCostDlg" />
 			<DialogRef Id="ErrorDlg" />
