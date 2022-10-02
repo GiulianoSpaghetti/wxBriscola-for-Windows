@@ -12,7 +12,7 @@
 			<ComponentRef Id="es" />
 			<ComponentRef Id="fr" />
 			<ComponentRef Id="it" />
-			<ComponentRef Id="Mazzi" />
+			<ComponentRef Id="Napoletano" />
 		</Feature>
 	</Product>
 
@@ -42,24 +42,24 @@
 					<Directory Id="LOCALE" Name="locale">
 						<Directory Id="LC_MESSAGES" Name="LC_MESSAGES">
 							<Directory Id="en" Name="en">
-								<Component Id="en" Guid="9fc6af1d-5762-40d9-9a87-ef04860ac51c" Win64='yes'>
+								<Component Id="en" Guid="309840D7-7F51-4F5D-85DC-FD61214DE428" Win64='yes'>
 									<File Id="wxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\en\wxbriscola.mo" />
 								</Component>
 							</Directory>
 							<Directory Id="es" Name="es">
-								<Component Id="es" Guid="9fc6af1d-5762-40d9-9a87-ef04860ac51b" Win64='yes'>
+								<Component Id="es" Guid="28C1C89B-1F75-4A8F-A288-EFF6BA103D07" Win64='yes'>
 									<File Id="eswxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\es\wxbriscola.mo" />
 									<File Id="eswxstd.mo" Name="wxstd.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\es\wxstd.mo" />
 								</Component>
 							</Directory>
 							<Directory Id="fr" Name="fr">
-								<Component Id="fr" Guid="9fc6af1d-5762-40d9-9a87-ef04860ac51a" Win64='yes'>
+								<Component Id="fr" Guid="8F04C3D6-394E-4B0E-B35C-8220B7A96C9F" Win64='yes'>
 									<File Id="frwxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\fr\wxbriscola.mo" />
 									<File Id="frwxstd.mo" Name="wxstd.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\fr\wxstd.mo" />
 								</Component>
 							</Directory>
 							<Directory Id="it" Name="it">
-								<Component Id="it" Guid="9fc6af1d-5762-40d9-9a87-ef04860ac519" Win64='yes'>
+								<Component Id="it" Guid="6CD3B7DB-8D6F-466E-A440-7D1CF834C6D6" Win64='yes'>
 									<File Id="itwxstd.mo" Name="wxstd.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\it\wxstd.mo" />
 									<File Id="itwxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\it\wxbriscola.mo" />
 								</Component>
@@ -67,8 +67,8 @@
 						</Directory>
 					</Directory>
 					<Directory Id="Mazzi" Name="Mazzi">
-						<Directory Id="Napoletano" Name="Napoletano">
-							<Component Id="Mazzi" Guid="9fc6af1d-5762-40d9-9a87-ef04860ac51e" Win64='yes'>
+						<Directory Id="DirNapoletano" Name="Napoletano">
+							<Component Id="Napoletano" Guid="20C8E631-D8A3-4E63-8BBD-C2D8E3D26CC5" Win64='yes'>
 								<File Id="a" Name="0.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\0.png" />
 								<File Id="b" Name="1.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\1.png" />
 								<File Id="c" Name="2.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\2.png" />
@@ -118,7 +118,19 @@
 				</Directory>
 			</Directory>	
 		</Directory>
-		<UI Id="WixUI_InstallDir">
+		<Feature Id="MainProgram" Level="1" Title="Programma" Description="Il programma principale">
+			<ComponentRef Id="ProductComponents"/>
+		</Feature>
+		<Feature Id="Languages" Level="2" Title="Linguaggi" Description="Traduzioni">
+			<ComponentRef Id="en"/>
+			<ComponentRef Id="es"/>
+			<ComponentRef Id="fr"/>
+			<ComponentRef Id="it"/>
+		</Feature>
+		<Feature Id="Mazzi" Level="3" Title="Mazzi" Description="Mazzi di carte">
+			<ComponentRef Id="Napoletano"/>
+		</Feature>
+			<UI Id="WixUI_InstallDir">
 			<UIRef Id="WixUI_Common" />
 			<TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
 			<TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
@@ -127,7 +139,8 @@
 			<Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
 			<Property Id="WixUI_Mode" Value="InstallDir" />
 			<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
-
+			<Property Id="ARPNOMODIFY" Value="1" />
+			
 			<DialogRef Id="BrowseDlg" />
 			<DialogRef Id="DiskCostDlg" />
 			<DialogRef Id="ErrorDlg" />
@@ -165,7 +178,5 @@
 			<Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
 			<Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
 		</UI>
-
 	</Fragment>
-
 </Wix>

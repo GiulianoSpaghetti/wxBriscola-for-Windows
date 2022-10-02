@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="wxbriscola_Mazzi_HD_Gatti" Language="1033" Version="1.0.0.0" Manufacturer="numeronesoft" UpgradeCode="e75784e4-b88d-4bba-9cba-abb313ca4dd4">
+	<Product Id="*" Name="wxbriscola-Mazzi-HD-Gatti" Language="1033" Version="1.0.0.0" Manufacturer="numeronesoft" UpgradeCode="e75784e4-b88d-4bba-9cba-abb313ca4dd4">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 		<MediaTemplate />
 
-		<Feature Id="ProductFeature" Title="wxbriscola_Mazzi_HD_Gatti" Level="1">
+		<Feature Id="ProductFeature" Title="wxbriscola-Mazzi-HD-Gatti" Level="1">
 			<ComponentRef Id="ProductComponents" />
 		</Feature>
 	</Product>

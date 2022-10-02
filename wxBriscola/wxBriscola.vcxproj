@@ -163,7 +163,6 @@
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\wxbriscola.old\OpzioniFrame.cpp" />
     <ClCompile Include="BriscoApp.cpp" />
     <ClCompile Include="BriscoFrame.cpp" />
     <ClCompile Include="BriscoPanel.cpp" />
@@ -176,6 +175,7 @@
     <ClCompile Include="giocatoreHelperUtente.cpp" />
     <ClCompile Include="IntValidator.cpp" />
     <ClCompile Include="mazzo.cpp" />
+    <ClCompile Include="OpzioniFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

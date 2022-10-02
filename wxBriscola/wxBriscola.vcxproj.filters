@@ -96,9 +96,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\wxbriscola.old\OpzioniFrame.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
     <ClCompile Include="BriscoApp.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
@@ -133,6 +130,9 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="mazzo.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="OpzioniFrame.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
