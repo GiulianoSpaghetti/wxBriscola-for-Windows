@@ -207,7 +207,7 @@ void BriscoPanel::onTimer(wxTimerEvent &evt) {
 		}
 	}
 	if (m->getNumeroCarte()==2 && !avvisatoFineTallone && avvisaFineTallone) { //se e' finito il tallone
-		wxNotificationMessage *msg = new wxNotificationMessage(_("Tallone finito"), _("Il tallone è finito"), this);
+		wxNotificationMessage *msg = new wxNotificationMessage(_("Tallone finito"), _("Il tallone e' finito"), this);
 		msg->Show();
 		delete msg;
 		msg = NULL;
