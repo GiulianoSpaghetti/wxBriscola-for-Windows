@@ -1,5 +1,5 @@
 # wxBriscola-for-Windows
-[wxBriscola 0.4.2](https://github.com/numerunix/wxBriscola) per Visual Studio
+[wxBriscola 0.5](https://github.com/numerunix/wxBriscola) per Visual Studio
 
 # Donazione
 
