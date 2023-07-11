@@ -4,6 +4,7 @@
 # Come installare
 
 winget install GiulioSorrentino.wxBriscola
+
 Sull'ultimo windows 11 non passa i toast, perché non è firmato.
 
 # Donazione
