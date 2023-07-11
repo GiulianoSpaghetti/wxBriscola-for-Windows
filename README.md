@@ -1,6 +1,11 @@
 # wxBriscola-for-Windows
 [wxBriscola 0.5](https://github.com/numerunix/wxBriscola) per Visual Studio
 
+# Come installare
+
+winget install GiulioSorrentino.wxBriscola
+Sull'ultimo windows 11 non passa i toast, perché non è firmato.
+
 # Donazione
 
 [![paypal](https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H4ZHTFRCETWXG)
