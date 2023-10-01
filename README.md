@@ -1,6 +1,10 @@
 # wxBriscola-for-Windows
 [wxBriscola](https://github.com/numerunix/wxBriscola) per Visual Studio
 
+## Bug conosciuti
+Se si attivano le notifiche (i toast) il programma su windows 10 e 11 non si chiude più e necessita di essere chiuso a mano.
+Su windows 11 i toast non vengono proprio mostrati.
+
 ## Come installare
 
 ## Su Windows
