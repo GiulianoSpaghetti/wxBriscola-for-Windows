@@ -1,5 +1,5 @@
 # wxBriscola-for-Windows
-[wxBriscola 0.5](https://github.com/numerunix/wxBriscola) per Visual Studio
+[wxBriscola](https://github.com/numerunix/wxBriscola) per Visual Studio
 
 # Come installare
 
@@ -16,3 +16,5 @@ http://numerone.altervista.org/donazioni.php
 
 # Bibliografia
 https://stackoverflow.com/questions/57630222/wix-issue-inserting-a-custom-dialog-into-a-built-in-dialog-set
+
+https://learn.microsoft.com/it-it/cpp/cpp/static-members-cpp?view=msvc-170
