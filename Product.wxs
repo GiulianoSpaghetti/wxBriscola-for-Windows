@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define wxBriscola_TargetDir=$(var.wxBriscola.TargetDir)?>
+	<Product Id="*" Name="wxBriscola" Language="1033" Version="0.4.3" Manufacturer="numeronesoft" UpgradeCode="9866571a-efff-404b-ada6-344a5a8e494b">
+		<Package Platform="x64" InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="SetupProject1" Level="1">
+			<ComponentRef Id="ProductComponents" />
+			<ComponentRef Id="en" />
+			<ComponentRef Id="es" />
+			<ComponentRef Id="fr" />
+			<ComponentRef Id="it" />
+			<ComponentRef Id="Napoletano" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFiles64Folder">
+				<Directory Id="INSTALLFOLDER" Name="wxBriscola">
+					<Directory Id="ProgramMenuFolder">
+						<Directory Id="wxBriscolaFolder" Name="wxBriscola">
+						</Directory>
+					</Directory>
+					<Component Id="ProductComponents" Guid="9fc6af1d-5762-40d9-9a87-ef04860ac51d" Win64='yes'>
+						<File Id="wxBriscolaExe" Name="wxBriscola.exe" Source="$(var.wxBriscola_TargetDir)wxBriscola.exe" ProcessorArchitecture='x64'>
+							<Shortcut Id="wxBriscola" Directory="wxBriscolaFolder" Name="wxBriscola" WorkingDirectory="INSTALLFOLDER" Advertise="no">
+							</Shortcut>
+						</File>
+						<RemoveFolder Id="DeletewxBriscolaShortcut" Directory="wxBriscolaFolder" On="uninstall" />
+						<File Id="wxbase321u_vc_x64_colamonico.dll" Name="wxbase321u_vc_x64_colamonico.dll" Source="$(var.wxBriscola_TargetDir)wxbase321u_vc_x64_colamonico.dll" />
+						<File Id="wxmsw321u_core_vc_x64_colamonico.dll" Name="wxmsw321u_core_vc_x64_colamonico.dll" Source="$(var.wxBriscola_TargetDir)wxmsw321u_core_vc_x64_colamonico.dll" />
+						<Shortcut Id="UninstallThisProduct" Directory="wxBriscolaFolder"
+								  Name="Uninstall wxBriscola"
+								  Description="Uninstalls wxBriscola"
+								  Target="[System64Folder]msiexec.exe"
+								  Arguments="/x [ProductCode]" />
+						<RegistryValue Root="HKCU" Key="Software\wxBriscola" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+					</Component>
+					<Directory Id="LOCALE" Name="locale">
+						<Directory Id="LC_MESSAGES" Name="LC_MESSAGES">
+							<Directory Id="en" Name="en">
+								<Component Id="en" Guid="309840D7-7F51-4F5D-85DC-FD61214DE428" Win64='yes'>
+									<File Id="wxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\en\wxbriscola.mo" />
+								</Component>
+							</Directory>
+							<Directory Id="es" Name="es">
+								<Component Id="es" Guid="28C1C89B-1F75-4A8F-A288-EFF6BA103D07" Win64='yes'>
+									<File Id="eswxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\es\wxbriscola.mo" />
+									<File Id="eswxstd.mo" Name="wxstd.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\es\wxstd.mo" />
+								</Component>
+							</Directory>
+							<Directory Id="fr" Name="fr">
+								<Component Id="fr" Guid="8F04C3D6-394E-4B0E-B35C-8220B7A96C9F" Win64='yes'>
+									<File Id="frwxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\fr\wxbriscola.mo" />
+									<File Id="frwxstd.mo" Name="wxstd.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\fr\wxstd.mo" />
+								</Component>
+							</Directory>
+							<Directory Id="it" Name="it">
+								<Component Id="it" Guid="6CD3B7DB-8D6F-466E-A440-7D1CF834C6D6" Win64='yes'>
+									<File Id="itwxstd.mo" Name="wxstd.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\it\wxstd.mo" />
+									<File Id="itwxbriscola.mo" Name="wxbriscola.mo" Source="$(var.wxBriscola_TargetDir)\locale\LC_MESSAGES\it\wxbriscola.mo" />
+								</Component>
+							</Directory>
+						</Directory>
+					</Directory>
+					<Directory Id="Mazzi" Name="Mazzi">
+						<Directory Id="DirNapoletano" Name="Napoletano">
+							<Component Id="Napoletano" Guid="20C8E631-D8A3-4E63-8BBD-C2D8E3D26CC5" Win64='yes'>
+								<File Id="a" Name="0.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\0.png" />
+								<File Id="b" Name="1.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\1.png" />
+								<File Id="c" Name="2.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\2.png" />
+								<File Id="d" Name="3.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\3.png" />
+								<File Id="e" Name="4.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\4.png" />
+								<File Id="f" Name="5.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\5.png" />
+								<File Id="g" Name="6.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\6.png" />
+								<File Id="hh" Name="7.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\7.png" />
+								<File Id="i" Name="8.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\8.png" />
+								<File Id="j" Name="9.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\9.png" />
+								<File Id="h" Name="10.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\10.png" />
+								<File Id="k" Name="11.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\11.png" />
+								<File Id="l" Name="12.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\12.png" />
+								<File Id="m" Name="13.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\13.png" />
+								<File Id="n" Name="14.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\14.png" />
+								<File Id="o" Name="15.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\15.png" />
+								<File Id="p" Name="16.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\16.png" />
+								<File Id="q" Name="17.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\17.png" />
+								<File Id="r" Name="18.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\18.png" />
+								<File Id="s" Name="19.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\19.png" />
+								<File Id="t" Name="20.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\20.png" />
+								<File Id="u" Name="21.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\21.png" />
+								<File Id="v" Name="22.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\22.png" />
+								<File Id="w" Name="23.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\23.png" />
+								<File Id="x" Name="24.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\24.png" />
+								<File Id="y" Name="25.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\25.png" />
+								<File Id="z" Name="26.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\26.png" />
+								<File Id="aa" Name="27.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\27.png" />
+								<File Id="ab" Name="28.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\28.png" />
+								<File Id="ac" Name="29.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\29.png" />
+								<File Id="ad" Name="30.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\30.png" />
+								<File Id="ae" Name="31.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\31.png" />
+								<File Id="af" Name="32.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\32.png" />
+								<File Id="ag" Name="33.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\33.png" />
+								<File Id="ah" Name="34.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\34.png" />
+								<File Id="ai" Name="35.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\35.png" />
+								<File Id="aj" Name="36.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\36.png" />
+								<File Id="ak" Name="37.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\37.png" />
+								<File Id="al" Name="38.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\38.png" />
+								<File Id="am" Name="39.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\39.png" />
+								<File Id="an" Name="retro carte pc.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\retro carte pc.png" />
+								<File Id="ao" Name="retro carte mazzo.png" Source="$(var.wxBriscola_TargetDir)\Mazzi\Napoletano\retro carte mazzo.png" />
+							</Component>
+							
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>	
+		</Directory>
+		<Feature Id="MainProgram" Level="1" Title="Programma" Description="Il programma principale">
+			<ComponentRef Id="ProductComponents"/>
+		</Feature>
+		<Feature Id="Languages" Level="2" Title="Linguaggi" Description="Traduzioni">
+			<ComponentRef Id="en"/>
+			<ComponentRef Id="es"/>
+			<ComponentRef Id="fr"/>
+			<ComponentRef Id="it"/>
+		</Feature>
+		<Feature Id="Mazzi" Level="3" Title="Mazzi" Description="Mazzi di carte">
+			<ComponentRef Id="Napoletano"/>
+		</Feature>
+			<UI Id="WixUI_InstallDir">
+			<UIRef Id="WixUI_Common" />
+			<TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
+			<TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
+			<TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
+
+			<Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
+			<Property Id="WixUI_Mode" Value="InstallDir" />
+			<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+			<Property Id="ARPNOMODIFY" Value="1" />
+			
+			<DialogRef Id="BrowseDlg" />
+			<DialogRef Id="DiskCostDlg" />
+			<DialogRef Id="ErrorDlg" />
+			<DialogRef Id="FatalError" />
+			<DialogRef Id="FilesInUse" />
+			<DialogRef Id="MsiRMFilesInUse" />
+			<DialogRef Id="PrepareDlg" />
+			<DialogRef Id="ProgressDlg" />
+			<DialogRef Id="ResumeDlg" />
+			<DialogRef Id="UserExit" />
+
+			<Publish Dialog="BrowseDlg" Control="OK" Event="DoAction" Value="WixUIValidatePath" Order="3">1</Publish>
+			<Publish Dialog="BrowseDlg" Control="OK" Event="SpawnDialog" Value="InvalidDirDlg" Order="4"><![CDATA[WIXUI_INSTALLDIR_VALID<>"1"]]></Publish>
+
+			<Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
+
+			<Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="InstallDirDlg">NOT Installed</Publish>
+			<Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="VerifyReadyDlg">Installed AND PATCH</Publish>
+
+			<Publish Dialog="InstallDirDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg">1</Publish>
+			<Publish Dialog="InstallDirDlg" Control="Next" Event="SetTargetPath" Value="[WIXUI_INSTALLDIR]" Order="1">1</Publish>
+			<Publish Dialog="InstallDirDlg" Control="Next" Event="DoAction" Value="WixUIValidatePath" Order="2">NOT WIXUI_DONTVALIDATEPATH</Publish>
+			<Publish Dialog="InstallDirDlg" Control="Next" Event="SpawnDialog" Value="InvalidDirDlg" Order="3"><![CDATA[NOT WIXUI_DONTVALIDATEPATH AND WIXUI_INSTALLDIR_VALID<>"1"]]></Publish>
+			<Publish Dialog="InstallDirDlg" Control="Next" Event="NewDialog" Value="VerifyReadyDlg" Order="4">WIXUI_DONTVALIDATEPATH OR WIXUI_INSTALLDIR_VALID="1"</Publish>
+			<Publish Dialog="InstallDirDlg" Control="ChangeFolder" Property="_BrowseProperty" Value="[WIXUI_INSTALLDIR]" Order="1">1</Publish>
+			<Publish Dialog="InstallDirDlg" Control="ChangeFolder" Event="SpawnDialog" Value="BrowseDlg" Order="2">1</Publish>
+
+			<Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="InstallDirDlg" Order="1">NOT Installed</Publish>
+			<Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg" Order="2">Installed AND NOT PATCH</Publish>
+			<Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg" Order="2">Installed AND PATCH</Publish>
+
+			<Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+
+			<Publish Dialog="MaintenanceTypeDlg" Control="RepairButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+			<Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+			<Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
+		</UI>
+	</Fragment>
+</Wix>
