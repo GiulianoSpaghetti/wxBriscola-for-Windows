@@ -18,7 +18,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={autopf}\{#MyAppName}
+DefaultDirName={autopf64}\{#MyAppName}
 DisableProgramGroupPage=yes
 LicenseFile=C:\Users\numer\source\repos\wxbriscola-for-windows\LICENSE.txt
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
@@ -28,6 +28,7 @@ OutputBaseFilename=wxbriscola-0.6.1-x64
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+ArchitecturesAllowed=x64
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -64,8 +65,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "C:\Users\numer\source\repos\wxbriscola-for-windows\x64\Release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\numer\source\repos\wxbriscola-for-windows\x64\Release\wxbase322u_vc_x64_carmela.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\numer\source\repos\wxbriscola-for-windows\x64\Release\wxmsw322u_core_vc_x64_carmela.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files\wxBriscola\locale\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Program Files\wxBriscola\Mazzi\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\numer\source\repos\wxbriscola-for-windows\x64\Release\locale\*"; DestDir: "{app}\locale"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\numer\source\repos\wxbriscola-for-windows\x64\Release\Mazzi\*"; DestDir: "{app}\Mazzi"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
