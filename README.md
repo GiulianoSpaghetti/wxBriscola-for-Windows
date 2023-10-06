@@ -5,6 +5,10 @@
 Se si attivano le notifiche (i toast) il programma su windows 10 e 11 non si chiude più e necessita di essere chiuso a mano.
 Su windows 11 i toast non vengono proprio mostrati.
 
+## Video di presentazione
+
+https://www.youtube.com/watch?v=kODrecClKoc
+
 ## Come installare
 
 ## Su Windows
