@@ -1,3 +1,6 @@
+![made in parco grifeo](https://github.com/user-attachments/assets/79e7608a-aedb-4b85-bd71-46650c120667)
+
+
 # wxBriscola-for-Windows
 [wxBriscola](https://github.com/numerunix/wxBriscola) per Visual Studio
 
