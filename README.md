@@ -22,11 +22,6 @@ https://www.youtube.com/watch?v=kODrecClKoc
 
 http://numerone.altervista.org/donazioni.php
 
-## Bibliografia
-https://stackoverflow.com/questions/57630222/wix-issue-inserting-a-custom-dialog-into-a-built-in-dialog-set
-
-https://learn.microsoft.com/it-it/cpp/cpp/static-members-cpp?view=msvc-170
-
 ## Bug noti
 
 Su windows 10 e 11 23h2 i toast potrebbero non essere mostrati e potrebbe rimanere appesa l'applicazione in fase di chiusura se si prova a usare i toast, se questo accade, deselezionare "mostra le cose più interessanti"
