@@ -1,11 +1,12 @@
 ![made in parco grifeo](https://github.com/user-attachments/assets/79e7608a-aedb-4b85-bd71-46650c120667)
 
-
 # wxBriscola-for-Windows
 [wxBriscola](https://github.com/numerunix/wxBriscola) per Visual Studio
 
+Questo gioco dimostra che la teoria dei giochi è vera: l'algorimo brevettato funziona su tutti i giochi di carte senza piatto.
+
 ## Bug conosciuti
-Se si attivano le notifiche (i toast) il programma su windows 10 e 11 non si chiude più e necessita di essere chiuso a mano.
+Se si attivano le notifiche (i toast) il programma su windows 11 non si chiude più e necessita di essere chiuso a mano.
 Su windows 11 i toast non vengono proprio mostrati.
 
 ## Video di presentazione
