@@ -25,4 +25,8 @@ http://numerone.altervista.org/donazioni.php
 
 ## Bug noti
 
-Su windows 10 e 11 23h2 i toast potrebbero non essere mostrati e potrebbe rimanere appesa l'applicazione in fase di chiusura se si prova a usare i toast, se questo accade, deselezionare "mostra le cose più interessanti"
+Su windows 10 e 11 23h2 i toast potrebbero non essere mostrati e potrebbe rimanere appesa l'applicazione in fase di chiusura se si prova a usare i toast, se questo accade, deselezionare "mostra le cose più interessanti".
+
+La disinstallazione del mazzo di carte non è gestita, ma nel file di configurazione del gioco ne rimane traccia, quindi disinstallando un mazzo il programma potrebbe  non avviarsi più.
+
+Per ovviare al problema inserire il nome di una subdirectory di C:\Program Files\wxBriscola\Mazzi indicante il vostro mazzo di default, che può non essere necessariamene il napoletano, perché le immagini non sono integrate nell'eseguibile.
