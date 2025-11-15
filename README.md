@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=kODrecClKoc
 
 ## Su Windows
 
-[![winget](https://user-images.githubusercontent.com/49786146/159123313-3bdafdd3-5130-4b0d-9003-40618390943a.png)](https://marticliment.com/wingetui/share?pid=GiulioSorrentino.wxBriscola&pname=wxBriscola&psource=Winget:%20winget)
+[![pling](http://numeronesoft.ddns.net:8080/images/pling.png)](https://www.pling.com/p/2310373)
 
 ## Donazione
 
